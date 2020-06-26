@@ -10,7 +10,7 @@ def request(concept):
     response es la variable donde dumpeamos el json con la informacion que queremos
     """""
     url = "https://api.estadisticasbcra.com/"+concept
-    headers = {"Authorization": "BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjM5Mjc4MTgsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJsZWNoZXMxMjM3QGdtYWlsLmNvbSJ9.Nc5r_7CfW4F8iye6CbM4sgiLe6nh4UMf_rHt1Vp84aclgn0cbmQdW3XbFZe2cTqR-3fIPo0EH1eEBdd3Sa0V0w"}
+    headers = {"Authorization": "BEARER #heregoesyourkey"}
     response = json.loads(requests.get(url, headers=headers ).text)
     
     return response
